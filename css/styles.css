@@ -154,13 +154,22 @@ body {
 }
 
 .contact-link {
-    display: block;
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-2-text-color);
     padding: 32px 0;
+    align-items: center;
+}
+
+.contact-link.header-link:focus .header-icon {
+    color: var(--accent-color);
+}
+
+.header-icon {
+    margin-right: 10px;
 }
 
 /* HOVER AND FOCUS IN HEADER */
@@ -186,8 +195,15 @@ body {
 /* SECTION-1 */
 
 .hero.section {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 200px 0;
     background-color: var(--bg-hd-ft-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Stydio/Hero/bg-Img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .title-hero {
@@ -220,6 +236,7 @@ body {
 .pointer.hero-btn {
     display: inline-block;
     padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
 
 /* SECTION-2 */
@@ -246,6 +263,19 @@ body {
 
 .benefit-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.benefit-icon {
+    display: inline-block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bg-accent-color);
+    border-radius: 4px;
 }
 
 /* SECTION-3 */
@@ -302,10 +332,45 @@ body {
 }
 
 .text-card {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     color: var(--main-2-text-color);
+}
+
+.team-card-icons {
+    display: flex;
+    padding: 0 32px;
+}
+
+.team-list-icon {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.team-list-icon:nth-of-type(4n) {
+    margin: 0;
+}
+
+.team-link-icon {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+
+.team-link-icon:hover,
+.team-link-icon:focus {
+    background-color: var(--accent-color);
+}
+
+.team-icon:hover,
+.team-icon:focus {
+    fill: var(--white-color);
 }
 
 /* PORTFOLIO-MAIN */
@@ -326,6 +391,7 @@ body {
 .filter-btn:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-btn {
@@ -353,8 +419,13 @@ body {
     flex-basis: calc((100% - 60px) / 3);
 }
 
+.project-item:hover,
+.project-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-item:nth-of-type(3n) {
-    margin: 0;
+    margin-right: 0;
 }
 
 .project-item:nth-last-child(-n + 3) {
