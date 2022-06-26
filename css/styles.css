@@ -278,17 +278,18 @@ body {
     margin-right: 30px;
 }
 
-.benefit-icon {
-    display: inline-block;
-    content: "";
-    width: 270px;
+.icon-wrapping {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
     margin-bottom: 30px;
-    padding: 25px 100px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: var(--bg-accent-color);
     border-radius: 4px;
+}
+
+.benefit-icon {
+    display: inline-block;
 }
 
 /* SECTION-3 */
@@ -357,12 +358,11 @@ body {
 
 .team-card-icons {
     display: flex;
-    padding: 0 32px;
+    align-items: center;
+    justify-content: center;
 }
 
 .team-list-icon {
-    width: 44px;
-    height: 44px;
     margin-right: 10px;
 }
 
@@ -376,7 +376,6 @@ body {
     justify-content: center;
     width: 44px;
     height: 44px;
-    padding: 12px;
     background-color: var(--white-color);
     border-radius: 50%;
 }
