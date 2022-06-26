@@ -541,8 +541,12 @@ body {
         color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-address-list {
+    max-height: 21px;
+}
+
 .footer-address-list:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .address .footer-link:hover,
