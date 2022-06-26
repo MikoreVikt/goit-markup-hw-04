@@ -420,16 +420,14 @@ body {
     border-color: var(--accent-color);
 }
 
-.customer-icon {
-    fill: currentColor;
-}
-
-.customer-icon:hover,
-.customer-icon:focus {
+.customer-link:hover .customer-icon.icon,
+.customer-link:focus .customer-icon.icon {
     fill: var(--accent-color);
 }
 
-
+.customer-icon {
+    fill: currentColor;
+}
 
 /* PORTFOLIO-MAIN */
                                                               
